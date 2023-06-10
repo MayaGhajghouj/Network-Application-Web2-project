@@ -1,0 +1,13 @@
+<%if(username==''){%>
+    <li><a class="active" href="/home">Home</a></li>
+    <li><a href="/login">Login</a></li>
+<%}else if(username=='admin'){%>
+    <li><a class="active" href="/home">Home</a></li>
+    <li><a href="/search">Search</a></li>
+    <li><a href="/addService">Add Service</a></li>
+    <li><a href="/logout">Logout</a></li>
+<%}else{%>
+    <li><a class="active" href="/home">Home</a></li>
+    <li><a href="/search">Search</a></li>
+    <li><a href="/logout">Logout</a></li>
+<%}%>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <title>home page</title>
+</head>
+<body>
+    
+    <ul>
+        <%-include("partial/NAVBAR")%>  
+    </ul>
+    <%if(username==''){%>
+        <h1>welcome in our center </h1>
+        <h2>please create account or login to view the services and search on it</h2>
+    <%}else if(username=='admin'){%>
+        <h1>welcome in our center our <%=username%> </h1>
+        <h2>if you want to search any services please click <b><i><u>search</u></i></b> button above</h2>
+        <h2>and if you want to add services to center click <b><i><u> Add services</u></i></b> button above</h2>
+    <%}else{%>
+        <h1>welcome in our center <%=username%> </h1>
+        <h2> you can search any services just click <b><i><u>search </u></i>button above</h2>
+    <%}%>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit informations</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <ul>
+        <%-include("partial/NAVBAR")%>
+    </ul>
+
+    <h1>Edit services information by update or delete services</h1>
+
+    <form class="editform" action="/editinfo" method="post">
+        <input type="text" placeholder="ID" value="<%=id%>" name="myid" readonly><br>
+        <input type="text" placeholder="service name" value="<%=name%>" name="name"><br>
+        <input type="text" placeholder="service price" value="<%=price%>" name="price"><br>
+        <input type="text" placeholder="doctor name" value="<%=doctor%>" name="doctor"><br>
+        <input type="text" placeholder="Descrptioon" value="<%=Descrptioon%>" name="Descrptioon"><br>
+        <input type="submit" value="Update" ><br>
+
+    </form>
+    <form class="deleteForm" action="/delete" method="get">
+        <input type="text" placeholder="ID" value="<%=id%>" name="myid" readonly hidden><br>
+        <input type="submit" value="Delete" ><br>
+    </form>
+</body>
+</html>

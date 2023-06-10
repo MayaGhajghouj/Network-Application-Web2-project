@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+
+    <title>signup page</title>
+</head>
+<body>
+    <ul>
+        <%-include("partial/NAVBAR")%>
+    </ul>
+
+    <h1>signup</h1>
+    
+    <form action="/signup" method="post" >
+        <label for="username">User name:</label>
+        <input type="text" name="username" id="username">
+        <label for="password">Password :</label>
+        <input type="password" name="password" id="password" >
+        <input type="submit" , value="signup">
+    </form>
+<!--
+    <img src="images/<%=name%>">
+    <form class="picForm" action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="myfile">
+        <input type="submit" value="upload">
+    </form>
+-->
+    
+
+</body>
+</html>

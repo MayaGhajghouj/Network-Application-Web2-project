@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="search.css">
+    <title>search page</title>
+</head>
+
+<body>
+
+    <ul>
+        <%-include("partial/NAVBAR")%>
+    </ul>
+
+    <h1>search any services you need to show its informations</h1>
+
+    <form class="serchForm" action="/sear" method="get">
+        <input type="search" name="Service" placeholder="Service name">
+        <input type="submit" value="search">
+    </form>
+
+    <table class="mytable">
+        <thead>
+            <th>Service name</th>
+            <th>Price</th>
+            <th>Doctor</th>
+            <th>Descrptioon</th>
+        </thead>
+        <tbody>
+            <%services.forEach((ele)=>{%>
+                <tr>
+                    <%if(username=='admin'){%>
+                    <td><a href="/edit?id=<%=ele.id%>"><%=ele.name%></a></td>
+                    <%}else{%>
+                        <td><%=ele.name%></td>
+                    <%}%>
+                    <td><%=ele.price%></td>
+                    <td><%=ele.doctor_name%></td>
+                    <td><%=ele.description%></td>
+                </tr>
+            <%})%>
+        </tbody>
+    </table>
+
+
+</body>
+
+</html>

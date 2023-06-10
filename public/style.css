@@ -1,0 +1,82 @@
+body{ 
+    background-color: #333;
+    color: whitesmoke;
+    font-weight: bold;
+ }
+h1 {
+   
+    color: rgb(229, 75, 14);
+    text-align: center;
+}
+label {
+    margin-right: 5px;
+    font-weight: bold;
+    font-size: large;
+}
+a{
+ 
+    padding: 20px;
+    color: rgb(229, 75, 14);
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+input[type='text'],input[type='password'],input[type='submit'],input[type='file']
+{
+    text-align: center;
+    padding: 10px;
+    margin: 15px;
+    width: 70%;
+    font-weight: bold;
+    color: black;
+    border-radius: 5px;
+    background-color: wheat;
+}
+input[type='submit']{
+    position: relative;
+    left: 17px;
+    background-color:cadetblue;
+    margin: 10px;
+}
+form{
+    position: absolute;
+    left:37%;
+    border: 1px solid white;
+    border-radius: 5%;
+    padding: 3%;
+    height: 300px;
+    width: 300px;
+}
+.editform{
+    position: absolute;
+    left:40%;
+    height: 500px;
+    padding: 0;
+    margin: 0;
+}
+.addform{
+    position: absolute;
+    left:40%;
+    height: 350px;
+    padding: 0;
+    margin: 0;
+}
+
+.deleteForm{
+    position: absolute;
+    left: 40%;
+    top: 550px;
+    height: 40px;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+.picForm{
+    position: absolute;
+    left: 37%;
+    top:50%;
+    height: 300px;
+    width: 300px;
+    border: none;
+}

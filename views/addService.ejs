@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add Services</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <ul>
+        <%-include("partial/NAVBAR")%>
+    </ul>
+    <h1>Add new service to our center</h1>
+    <form class="addform" action="/add" method="post">
+        <input type="text" placeholder="service name" name="name"><br>
+        <input type="text" placeholder="service price" name="price"><br>
+        <input type="text" placeholder="doctor name" name="doctor"><br>
+        <input type="text" placeholder="Descrptioon" name="Descrptioon"><br>
+        <input type="submit" value="add" ><br>
+
+    </form>
+</body>
+</html>
